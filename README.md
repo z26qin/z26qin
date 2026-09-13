@@ -2,57 +2,75 @@
 
 ```text
 Applied AI for Financial Services
-Building production agents, RAG systems, and research workflows for markets desks
+Scope desk problems → choose agent vs RAG → ship with eval gates → drive adoption
 ```
 
-Formerly **Quantitative Developer / AI Engineer** at Morgan Stanley (Fixed Income) — embedding with FX, credit, and research workflows to ship AI from prototype to desk adoption.
+**Quantitative Developer / AI Engineer** (ex-Morgan Stanley Fixed Income) — embedded with FX, credit, and research desks to turn ambiguous investment questions into production AI systems.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aaron-qin-6aa09689/)
 [![Email](https://img.shields.io/badge/Email-z26qin%40outlook.com-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:z26qin@outlook.com)
+[![Location](https://img.shields.io/badge/Toronto-Canada-111111?style=for-the-badge)](https://github.com/z26qin)
 
 ---
 
-## What I work on
+## How I ship AI
 
-- **Agentic workflows** — LangGraph / tool-using agents with eval gates & fail-closed fallbacks
-- **RAG for markets** — pgvector retrieval over research notes & headlines
-- **Applied NLP** — FOMC / sentiment pipelines, attribution & correlation explanations
-- **Production AI** — FastAPI services, React dashboards, monitoring & HITL loops
+1. **Scope** — sit with desks, decompose messy research/trading questions into agent vs RAG vs classical ML
+2. **Build** — LangGraph / tool-using agents, pgvector retrieval, FastAPI + React for desk delivery
+3. **Gate** — golden-set / HITL eval, fail-closed fallbacks, prompt & model versioning before release
+4. **Close the loop** — user feedback retrains ranking/prompts; measure adoption, not just latency
 
-## Tech stack
+## AI systems I ship
+
+| Layer | What I actually run |
+|---|---|
+| **Agents** | Stateful LangGraph workflows, tool schemas, multi-step investigation, fail-closed paths |
+| **RAG** | pgvector + transformer embeddings over research notes / headlines; grounded answers |
+| **Eval** | Golden sets, HITL review, regression gates before desk delivery |
+| **Serving** | FastAPI microservices, React dashboards, tracing, latency/cost guardrails, MLflow |
+| **Models** | LoRA/PEFT, continued pre-training, FinBERT-style classifiers, vLLM inference |
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=python,pytorch,fastapi,react,postgres,docker,aws,linux,git&perline=9" />
 </p>
 
-Also: LangGraph · LangChain · pgvector · MLflow · Redis · Transformers / LoRA
+Also day-to-day: **LangGraph · LangChain · pgvector · MLflow · Redis · Transformers**
 
 ---
 
-## Featured projects
+## Featured systems
 
-| Project | What it does |
-|---|---|
-| [**rsi-research-agent**](https://github.com/z26qin/rsi-research-agent) | Multi-agent investigation system for US equity momentum tail-risk |
-| [**momentum-tail-risk-monitor**](https://github.com/z26qin/momentum-tail-risk-monitor) | AI-assisted monitor for momentum reversal / crowding risk with PM-facing outputs |
-| [**momentum-risk-agent**](https://github.com/z26qin/momentum-risk-agent) | Investigation agent over a deterministic momentum tail-risk monitor |
-| [**FOMC_Inference_signal**](https://github.com/z26qin/FOMC_Inference_signal) | FOMC transcript → hawkish / dovish / neutral trading signals |
-| [**llm-inference-service**](https://github.com/z26qin/llm-inference-service) | Production LLM inference (OpenAI-compatible API, vLLM) |
-| [**stock-identity-pretrain**](https://github.com/z26qin/stock-identity-pretrain) | Transformer pretrain/finetune: volatility noise → tradable signals |
-| [**MacroMind**](https://github.com/z26qin/MacroMind) / [**macro-market-intelligence-agent**](https://github.com/z26qin/macro-market-intelligence-agent) | Macro market intelligence agents |
+### 1. [rsi-research-agent](https://github.com/z26qin/rsi-research-agent)
+Multi-agent investigation for US equity **momentum tail-risk** — tool-using loops across market/text sources, structured outputs, evidence checks.
 
----
+### 2. [momentum-tail-risk-monitor](https://github.com/z26qin/momentum-tail-risk-monitor)
+Deterministic risk monitor + **PM-facing** evidence-constrained AI layer (regime / crowding / next-check suggestions).
 
-## GitHub stats
+### 3. [FOMC_Inference_signal](https://github.com/z26qin/FOMC_Inference_signal)
+FOMC transcripts → hawkish / dovish / neutral signals — NLP pipeline with serving & dashboard path.
 
-<p align="left">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=z26qin&show_icons=true&theme=transparent&hide_border=true&count_private=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=z26qin&layout=compact&theme=transparent&hide_border=true" />
-</p>
+### 4. [llm-inference-service](https://github.com/z26qin/llm-inference-service)
+Production **OpenAI-compatible** LLM inference on vLLM — the serving layer behind applied agents.
+
+Also: [fed-thesis-change](https://github.com/z26qin/fed-thesis-change) (RAG/agentic eval harness) · [macro-market-intelligence-agent](https://github.com/z26qin/macro-market-intelligence-agent)
 
 ---
 
-### Currently focused on
+## Product snapshots
 
-`Applied AI` · `Capital Markets` · `Agentic systems` · `RAG + eval` · `Desk-facing delivery`
+<!-- Drop 1–3 UI screenshots here (dashboard / agent chat / signal panel). Prefer desk-facing UI over notebooks. -->
+
+```text
+[ screenshot: React risk / research dashboard ]
+[ screenshot: agent investigation / WhatsApp skill UI ]
+[ screenshot: FOMC / signal panel ]
+```
+
+_Ping me with images and I’ll wire them in._
+
+---
+
+### Open to
+
+`Applied AI · Financial Services` · `AI FDE` · `Agentic systems` · `Capital markets AI`
 
