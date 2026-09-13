@@ -52,7 +52,7 @@ FOMC transcripts → hawkish / dovish / neutral signals — NLP pipeline with se
 ### 4. [llm-inference-service](https://github.com/z26qin/llm-inference-service)
 Production **OpenAI-compatible** LLM inference on vLLM — the serving layer behind applied agents.
 
-Also: [fed-thesis-change](https://github.com/z26qin/fed-thesis-change) (RAG/agentic eval harness) · [macro-market-intelligence-agent](https://github.com/z26qin/macro-market-intelligence-agent)
+Also: [macro-market-intelligence-agent](https://github.com/z26qin/macro-market-intelligence-agent) · [stock-identity-pretrain](https://github.com/z26qin/stock-identity-pretrain)
 
 ---
 
