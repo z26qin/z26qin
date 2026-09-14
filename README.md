@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./banner-white.png" alt="banner" width="100%" />
-</p>
-
 # Hi, I'm Aaron Qin 👋
 
 ```text
